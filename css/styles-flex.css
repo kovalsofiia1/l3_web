@@ -1,0 +1,107 @@
+body {
+  height: 100%;
+  font-family: "Raleway", sans-serif;
+  /* max-width: 1158px; */
+  margin-right: auto;
+  margin-left: auto;
+}
+img {
+  display: block;
+  width: 100%;
+  /* height: 100%; */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.page-header,
+.page-footer {
+  background-color: rgb(127, 224, 244);
+  padding: 3% 0;
+}
+.right-part {
+  background-color: antiquewhite;
+  width: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.left-sidebar {
+  background-color: rgb(127, 235, 178);
+  width: 30%;
+}
+.top {
+  height: 80%;
+  width: auto;
+}
+.bottom {
+  background-color: aliceblue;
+  padding: 2% 0;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-main {
+  display: flex;
+}
+.left-main-content {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.page-footer h3,
+.page-header h1 {
+  margin-right: 5%;
+  margin-left: auto;
+  display: flex;
+  justify-content: end;
+  color: aliceblue;
+  font-size: 30px;
+  text-align: end;
+}
+.right-sidebar {
+  width: 30%;
+  background-color: rgb(127, 235, 178);
+}
+aside h2 {
+  color: rgb(16, 94, 58);
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+aside ol,
+aside ul {
+  color: rgb(16, 94, 58);
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+aside ol a,
+aside ul a {
+  color: rgb(16, 94, 58);
+  text-decoration: none;
+  cursor: pointer;
+}
+.right-sidebar p {
+  color: rgb(16, 94, 58);
+  font-size: 14px;
+  margin: 30px 10px auto;
+}
+.bottom h2 {
+  color: rgb(27, 8, 110);
+  text-align: center;
+}

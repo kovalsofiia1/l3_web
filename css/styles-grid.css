@@ -1,0 +1,133 @@
+body {
+  height: 100%;
+  font-family: "Raleway", sans-serif;
+  /* max-width: 1158px; */
+  margin-right: auto;
+  margin-left: auto;
+}
+img {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+header,
+footer {
+  background-color: rgb(127, 224, 244);
+  height: 100%;
+  width: 100%;
+}
+.left,
+.right {
+  width: 100%;
+  height: 100%;
+}
+.top,
+.bottom {
+  background-color: rgb(235, 110, 214);
+}
+.page-header {
+  grid-area: header;
+  position: relative;
+}
+.page-footer {
+  grid-area: footer;
+  position: relative;
+}
+.left {
+  grid-area: sidebar;
+  background-color: rgb(127, 235, 178);
+}
+.right {
+  grid-area: right;
+  background-color: rgb(127, 235, 178);
+}
+.top {
+  grid-area: top;
+  background-color: aliceblue;
+}
+.bottom {
+  grid-area: bottom;
+  background-color: aliceblue;
+  padding: 4% 0;
+}
+.page-main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: auto 30%;
+  grid-template-rows: 80% 20%;
+  grid-template-areas:
+    "top right"
+    "bottom right";
+}
+
+body {
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-template-rows: 20% auto 20%;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "sidebar footer";
+}
+.picture {
+  width: 100%;
+  max-height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+aside h2 {
+  color: rgb(16, 94, 58);
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+aside ol,
+aside ul {
+  color: rgb(16, 94, 58);
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+aside ol a,
+aside ul a {
+  color: rgb(16, 94, 58);
+  text-decoration: none;
+  cursor: pointer;
+}
+.right p {
+  color: rgb(16, 94, 58);
+  font-size: 14px;
+  margin: 30px 10px auto;
+}
+.bottom h2 {
+  color: rgb(27, 8, 110);
+  text-align: center;
+  margin: 0;
+}
+.page-header h1,
+.page-footer h3 {
+  color: aliceblue;
+  position: absolute;
+  /* margin-top: 3%;
+  margin-right: 30px; */
+  font-size: 30px;
+  text-align: end;
+  top: 50%;
+  right: -3%;
+  transform: translate(-50%, -50%);
+}
+.page-footer h3 {
+  right: -8%;
+}
