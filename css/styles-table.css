@@ -1,7 +1,6 @@
 body {
   height: 100%;
   font-family: "Raleway", sans-serif;
-  /* max-width: 1158px; */
   margin-right: auto;
   margin-left: auto;
 }
@@ -66,7 +65,6 @@ td {
 }
 .page-header,
 .page-footer {
-  position: relative;
   height: 30%;
   background-color: rgb(127, 224, 244);
 }
@@ -76,15 +74,12 @@ td {
 }
 .page-footer h3,
 .page-header h1 {
-  /* margin-right: 5%; */
-  margin-left: auto;
+  margin-right: 30px;
   color: aliceblue;
   font-size: 30px;
   text-align: end;
-  position: absolute;
-  top: 50%;
-  right: -3%;
-  transform: translate(-50%, -50%);
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 .page-footer h3 {
   right: -8%;
@@ -111,4 +106,23 @@ td {
   color: rgb(16, 94, 58);
   font-size: 14px;
   margin: 30px 10px auto;
+}
+@media screen and (max-width: 768px) {
+  .right-sidebar p {
+    font-size: 12px;
+    margin: 15px 10px 10px;
+  }
+  .left-sidebar h2 {
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  .left-sidebar ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+  }
+  .left-sidebar ul a {
+    font-size: 12px;
+  }
 }

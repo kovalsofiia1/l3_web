@@ -139,9 +139,8 @@ aside ul a {
       "footer";
   }
   aside ul {
-    margin-left: auto;
-    margin-right: auto;
     display: grid;
+    place-items: center;
     grid-template-columns: repeat(auto-fill, minmax(100px, 130px));
     grid-gap: 10px;
     list-style: none;
@@ -156,5 +155,12 @@ aside ul a {
       "top "
       "bottom"
       "right";
+  }
+  aside h2 {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: fit-content;
   }
 }
